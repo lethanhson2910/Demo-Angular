@@ -1,0 +1,18 @@
+<p *ngIf="status">
+  {{name}}
+</p>
+<button class="btn btn-success" (click)="hidden()">Hidden</button>
+<button class="btn btn-danger" (click)="show()">Show</button>
+<br>
+<br>
+<br>
+<br>
+<div *ngIf="statusLogin; else ContentElse">
+  <button class="btn btn-success" (click)="logOut()">Log out</button>
+  <p>Hello <b>Cybersoft</b></p>
+</div>
+
+<ng-template #ContentElse>
+  <button class="btn btn-danger" (click)="logIn()">Log In</button>
+  <p>Log In, please</p>
+</ng-template>

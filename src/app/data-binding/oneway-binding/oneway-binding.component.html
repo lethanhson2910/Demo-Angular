@@ -1,0 +1,14 @@
+<h1 style="color:red">OneWay Binding</h1>
+<p>
+  <!-- //interpolation -->
+  {{name}}
+</p>
+
+<!-- property binding -->
+<input type="text" [value]="name" #thamso>
+<br>
+<img [src]="image" alt="">
+
+<!-- event-binding -->
+<br>
+<button class="btn btn-dark" (click)="eventBinding(thamso.value)">Event Binding</button>
