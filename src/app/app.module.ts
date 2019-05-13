@@ -19,6 +19,8 @@ import { Baitap2CardComponent } from './baitap2/baitap2-list/baitap2-card/baitap
 import { Baitap3Module } from './baitap3/baitap3.module';
 import { DataBindingModule } from './data-binding/data-binding.module';
 import { StructuralDirectiveModule } from './structural-directive/structural-directive.module';
+import { AttributeDirectiveModule } from './attribute-directive/attribute-directive.module';
+import { BaitapNgifModule } from './baitap-ngif/baitap-ngif.module';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { StructuralDirectiveModule } from './structural-directive/structural-dir
     BrowserModule, //Import thư viện & các module khác
     Baitap3Module,
     DataBindingModule,
-    StructuralDirectiveModule
+    StructuralDirectiveModule,
+    AttributeDirectiveModule,
+    BaitapNgifModule
   ],
   providers: [],
   bootstrap: [AppComponent]

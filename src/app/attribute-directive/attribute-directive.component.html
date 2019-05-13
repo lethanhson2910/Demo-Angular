@@ -1,0 +1,21 @@
+<app-ngclass></app-ngclass>
+<app-ngstyle></app-ngstyle>
+
+<div appHighlight>Hello</div>
+
+
+<!-- Không được viết 2 attribute trên cùng 1 thẻ -->
+<!-- ng-container: không dư thẻ div bên ngoài dữ liệu -->
+<ng-container *ngIf="mang !==null">
+    <div *ngFor="let item of mang">{{item}}</div>
+</ng-container>
+
+<!-- ng-template sử dụng private, chỉ trang nào sử dụng thì mới chạy đc -->
+
+<ng-container *ngTemplateOutlet="template"></ng-container>
+
+<ng-template #template>
+    <div>Noi dung Template</div>
+</ng-template>
+
+
