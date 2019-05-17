@@ -25,8 +25,8 @@ export class BaitapNgifComponent implements OnInit {
 
   logIn(us,pw){
     if(us ==="cybersoft" && pw ==="cybersoft"){
-      this.isLogin = true;
       this.name = us;
+      this.isLogin = true;
       localStorage.setItem("logIn", JSON.stringify(us));
       alert("Login Success");
     }

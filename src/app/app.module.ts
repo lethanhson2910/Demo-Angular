@@ -21,6 +21,9 @@ import { DataBindingModule } from './data-binding/data-binding.module';
 import { StructuralDirectiveModule } from './structural-directive/structural-directive.module';
 import { AttributeDirectiveModule } from './attribute-directive/attribute-directive.module';
 import { BaitapNgifModule } from './baitap-ngif/baitap-ngif.module';
+import { NgContentModule } from './ng-content/ng-content.module';
+import { InteractionModule } from './interaction/interaction.module';
+import { DatVeBusModule } from './dat-ve-bus/dat-ve-bus.module';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,10 @@ import { BaitapNgifModule } from './baitap-ngif/baitap-ngif.module';
     DataBindingModule,
     StructuralDirectiveModule,
     AttributeDirectiveModule,
-    BaitapNgifModule
+    BaitapNgifModule,
+    NgContentModule,
+    InteractionModule,
+    DatVeBusModule
   ],
   providers: [],
   bootstrap: [AppComponent]
